@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Puzzle Games</title>
+  <meta name="description" content="Mobile puzzle games by Jack.Shin" />
+  <style>
+    :root{--bg:#07091b;--card:#111535;--text:#f4f7ff;--muted:#aab4d6;--pink:#ff2eea;--blue:#28c7ff;--yellow:#ffd84d}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#151b49,#07091b 55%,#03040c);color:var(--text)}
+    a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:22px}.hero{position:relative;overflow:hidden;border-radius:28px;margin:18px 0 28px;box-shadow:0 0 40px #0008}.hero img{width:100%;display:block}.heroText{position:absolute;left:32px;bottom:30px;background:#050817cc;border:1px solid #ffffff22;border-radius:20px;padding:18px 22px;backdrop-filter:blur(8px)}
+    h1{margin:0;font-size:42px;letter-spacing:.5px}.heroText p{margin:8px 0 0;color:var(--muted)}
+    .section{margin:34px 0}.title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}h2{font-size:28px;margin:0}.badge{color:var(--yellow);font-weight:700}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:linear-gradient(180deg,#151a42,#0d1028);border:1px solid #ffffff18;border-radius:24px;padding:18px;box-shadow:0 10px 30px #0007}.card img,.card video{width:100%;border-radius:18px;display:block;background:#000}.card h3{font-size:24px;margin:14px 0 8px}.card p{color:var(--muted);line-height:1.55;margin:0 0 14px}.btns{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-block;padding:12px 16px;border-radius:999px;background:linear-gradient(90deg,var(--pink),var(--blue));font-weight:700}.btn.ghost{background:#ffffff12;border:1px solid #ffffff22}.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.shots img{width:100%;border-radius:16px;border:1px solid #ffffff18}.footer{border-top:1px solid #ffffff18;margin-top:46px;padding:26px 0;color:var(--muted);font-size:14px}.footer a{text-decoration:underline}.neon{color:#fff;text-shadow:0 0 12px var(--blue),0 0 22px var(--pink)}
+    @media(max-width:760px){.wrap{padding:14px}.heroText{position:static;border-radius:0;background:#0b0e24}.hero{border-radius:18px}h1{font-size:30px}.grid,.shots{grid-template-columns:1fr}.card{padding:14px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="assets/neon-header.png" alt="Neon puzzle game studio banner">
+      <div class="heroText">
+        <h1 class="neon">Neon Puzzle Games</h1>
+        <p>Colorful mobile puzzle games made with passion.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="title"><h2>Featured Games</h2><span class="badge">Android Games</span></div>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/brick-breaker.png" alt="Brick Breaker Neon Quest">
+          <h3>Brick Breaker: Neon Quest</h3>
+          <p>Break neon bricks, collect powerful items, increase balls, and challenge higher stages.</p>
+          <video controls muted playsinline poster="assets/brick-breaker.png">
+            <source src="assets/brick-breaker.mp4" type="video/mp4">
+          </video>
+        </article>
+        <article class="card">
+          <img src="assets/qubi-puzzle.png" alt="Qubi Puzzle Collection">
+          <h3>Qubi Puzzle Collection</h3>
+          <p>Sudoku, nonogram, and sliding puzzle collection for daily brain training.</p>
+          <video controls muted playsinline poster="assets/qubi-puzzle.png">
+            <source src="assets/qubi-puzzle.mp4" type="video/mp4">
+          </video>
+        </article>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Qubi Kids</h2>
+      <p>Simple, cute, and colorful puzzle experiences for casual players.</p>
+      <img src="assets/qubi-kids-title.png" alt="Qubi Kids title image" style="margin:14px 0 16px">
+      <div class="shots">
+        <img src="assets/qubi-kids-1.jpg" alt="Qubi Kids gameplay screenshot 1">
+        <img src="assets/qubi-kids-2.jpg" alt="Qubi Kids gameplay screenshot 2">
+        <img src="assets/qubi-kids-3.jpg" alt="Qubi Kids gameplay screenshot 3">
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Developer</h2>
+      <p>Jack.Shin · Indie Android Game Developer</p>
+      <div class="btns">
+        <a class="btn" href="https://play.google.com/store/apps/dev?id=8414036224546691131&hl=ko">Google Play Developer Page</a>
+        <a class="btn ghost" href="mailto:younggoo8000@gmail.com">Contact Email</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © 2026 Jack.Shin. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
